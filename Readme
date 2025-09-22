@@ -1,0 +1,36 @@
+# LibraryDB SQL Schema
+
+This project contains the SQL schema for a Library Management System database.
+
+## Database Structure
+
+The schema defines the following tables:
+
+- **Authors**: Stores author information.
+- **Categories**: Stores book categories/genres.
+- **Books**: Stores book details.
+- **BookAuthors**: Junction table for the many-to-many relationship between books and authors.
+- **BookCategories**: Junction table for the many-to-many relationship between books and categories.
+- **Members**: Stores library member information.
+- **Borrowings**: Tracks which members have borrowed which books.
+- **Fines**: Tracks fines associated with late returns.
+- **Reservations**: Tracks book reservations by members.
+
+## How to Use
+
+1. Open your MySQL client (such as MySQL Workbench or the MySQL command line).
+2. Run the SQL script in [`answer.sql`](answer.sql) to create the database and all tables.
+
+## Features
+
+- Supports multiple authors per book and multiple categories per book.
+- Tracks book borrowings, returns, fines, and reservations.
+- Enforces referential integrity with foreign keys and cascading deletes where appropriate.
+
+## File List
+
+- [`answer.sql`](answer.sql): Main SQL script to create the database schema.
+
+## License
+
+This project is for educational purposes.
